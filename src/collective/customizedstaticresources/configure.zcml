@@ -6,8 +6,6 @@
     i18n_domain="collective.customizedstaticresources"
     >
 
-  <i18n:registerTranslations directory="locales" />
-
   <genericsetup:registerProfile
       name="default"
       title="collective.customizedstaticresources"
