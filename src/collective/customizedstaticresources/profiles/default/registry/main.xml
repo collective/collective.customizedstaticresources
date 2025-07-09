@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+
+  <!-- disable default plone-bundle -->
+  <records interface="plone.base.interfaces.IBundleRegistry"
+           prefix="plone.bundles/plone"
+  >
+    <value key="enabled">False</value>
+    <value key="jscompilation">++plone++static/bundle-plone/bundle.min.js</value>
+    <value key="csscompilation" />
+    <value key="load_async">False</value>
+    <value key="load_defer">False</value>
+  </records>
+
+  <!-- enable our customized bundle -->
+  <records interface="plone.base.interfaces.IBundleRegistry"
+           prefix="plone.bundles/plone-customized-bundle"
+  >
+    <value key="enabled">False</value>
+    <value key="jscompilation">++plone++static/bundle/bundle.min.js</value>
+    <value key="csscompilation" />
+    <value key="load_async">False</value>
+    <value key="load_defer">False</value>
+  </records>
+
+</registry>
