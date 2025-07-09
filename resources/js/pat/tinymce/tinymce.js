@@ -1,5 +1,5 @@
 import Base from "@patternslib/patternslib/src/core/base";
-import _t from "../../core/i18n-wrapper";
+import _t from "@plone/mockup/src/core/i18n-wrapper";
 
 export default Base.extend({
     name: "tinymce",

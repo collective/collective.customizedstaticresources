@@ -1,9 +1,9 @@
 import $ from "jquery";
-import I18n from "../../core/i18n";
+import I18n from "@plone/mockup/src/core/i18n";
 import events from "@patternslib/patternslib/src/core/events";
 import logger from "@patternslib/patternslib/src/core/logging";
-import _t from "../../core/i18n-wrapper";
-import utils from "../../core/utils";
+import _t from "@plone/mockup/src/core/i18n-wrapper";
+import utils from "@plone/mockup/src/core/utils";
 
 const log = logger.getLogger("tinymce--implementation");
 

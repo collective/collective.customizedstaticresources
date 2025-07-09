@@ -5,8 +5,8 @@ import $ from "jquery";
 import _ from "underscore";
 
 import tinymce from "tinymce/tinymce";
-import "../../autotoc/autotoc";
-import "../../modal/modal";
+import "@plone/mockup/src/pat/autotoc/autotoc";
+import "@plone/mockup/src/pat/modal/modal";
 import ImageTemplate from "../templates/image.xml";
 import LinkTemplate from "../templates/link.xml";
 
@@ -108,7 +108,7 @@ var InternalLink = LinkType.extend({
         if (linkType === "internal" || linkType === "image") {
             options.selection.push(this.tiny.dom.getAttrib(element, "data-val"));
         }
-        const ContentBrowser = (await import("../../contentbrowser/contentbrowser"))
+        const ContentBrowser = (await import("@plone/mockup/src/pat/contentbrowser/contentbrowser"))
             .default;
         this.contentBrowserPattern = new ContentBrowser(inputEl, options);
     },

@@ -108,7 +108,7 @@ var InternalLink = LinkType.extend({
         if (linkType === "internal" || linkType === "image") {
             options.selection.push(this.tiny.dom.getAttrib(element, "data-val"));
         }
-        const ContentBrowser = (await import("../../contentbrowser/contentbrowser"))
+        const ContentBrowser = (await import("@plone/mockup/src/pat/contentbrowser/contentbrowser"))
             .default;
         this.contentBrowserPattern = new ContentBrowser(inputEl, options);
     },

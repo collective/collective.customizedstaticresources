@@ -19,52 +19,52 @@ import "@patternslib/patternslib/src/pat/inject/inject";
 import "@patternslib/patternslib/src/pat/depends/depends";
 
 // Import all used patterns for the bundle to be generated
-import "@plone/mockup/autotoc/autotoc";
-import "@plone/mockup/backdrop/backdrop";
-import "@plone/mockup/contentloader/contentloader";
-import "@plone/mockup/contentbrowser/contentbrowser";
-import "@plone/mockup/cookietrigger/cookietrigger";
-import "@plone/mockup/datatables/datatables";
-import "@plone/mockup/formautofocus/formautofocus";
-import "@plone/mockup/formunloadalert/formunloadalert";
-import "@plone/mockup/livesearch/livesearch";
-import "@plone/mockup/markspeciallinks/markspeciallinks";
-import "@plone/mockup/modal/modal";
-import "@plone/mockup/navigationmarker/navigationmarker";
-import "@plone/mockup/passwordstrength/passwordstrength";
-import "@plone/mockup/preventdoublesubmit/preventdoublesubmit";
-import "@plone/mockup/manageportlets/manageportlets.js";
-import "@plone/mockup/querystring/querystring";
-import "@plone/mockup/recurrence/recurrence";
-import "@plone/mockup/relateditems/relateditems";
-import "@plone/mockup/search/search";
-import "@plone/mockup/select2/select2";
-import "@plone/mockup/sortable/sortable";
-import "@plone/mockup/structure/structure";
-import "@plone/mockup/structure-updater/structure-updater";
-import "@plone/mockup/textareamimetypeselector/textareamimetypeselector";
+import "@plone/mockup/src/pat/autotoc/autotoc";
+import "@plone/mockup/src/pat/backdrop/backdrop";
+import "@plone/mockup/src/pat/contentloader/contentloader";
+import "@plone/mockup/src/pat/contentbrowser/contentbrowser";
+import "@plone/mockup/src/pat/cookietrigger/cookietrigger";
+import "@plone/mockup/src/pat/datatables/datatables";
+import "@plone/mockup/src/pat/formautofocus/formautofocus";
+import "@plone/mockup/src/pat/formunloadalert/formunloadalert";
+import "@plone/mockup/src/pat/livesearch/livesearch";
+import "@plone/mockup/src/pat/markspeciallinks/markspeciallinks";
+import "@plone/mockup/src/pat/modal/modal";
+import "@plone/mockup/src/pat/navigationmarker/navigationmarker";
+import "@plone/mockup/src/pat/passwordstrength/passwordstrength";
+import "@plone/mockup/src/pat/preventdoublesubmit/preventdoublesubmit";
+import "@plone/mockup/src/pat/manageportlets/manageportlets.js";
+import "@plone/mockup/src/pat/querystring/querystring";
+import "@plone/mockup/src/pat/recurrence/recurrence";
+import "@plone/mockup/src/pat/relateditems/relateditems";
+import "@plone/mockup/src/pat/search/search";
+import "@plone/mockup/src/pat/select2/select2";
+import "@plone/mockup/src/pat/sortable/sortable";
+import "@plone/mockup/src/pat/structure/structure";
+import "@plone/mockup/src/pat/structure-updater/structure-updater";
+import "@plone/mockup/src/pat/textareamimetypeselector/textareamimetypeselector";
 // COMMENT/REMOVE CUSTOMIZED PATTERNS
-// import "@plone/mockup/tinymce/tinymce";
-import "@plone/mockup/toggle/toggle";
-import "@plone/mockup/toolbar/toolbar";
-import "@plone/mockup/tree/tree";
-import "@plone/mockup/upload/upload";
+// import "@plone/mockup/src/pat/tinymce/tinymce";
+import "@plone/mockup/src/pat/toggle/toggle";
+import "@plone/mockup/src/pat/toolbar/toolbar";
+import "@plone/mockup/src/pat/tree/tree";
+import "@plone/mockup/src/pat/upload/upload";
 
 // CUSTOMIZED LOCAL PATTERNS
-import ".js/pat/tinymce/tinymce";
+import "./js/pat/tinymce/tinymce";
 
 // REMOVE obsolete patterns
-//import "@plone/mockup/texteditor/texteditor";
+//import "@plone/mockup/src/pat/texteditor/texteditor";
 
 // Controlpanels
-import "@plone/mockup/controlpanels/dexterity-types-listing";
-import "@plone/mockup/controlpanels/registry";
-import "@plone/mockup/controlpanels/schemaeditor";
-import "@plone/mockup/controlpanels/contentrules";
-import "@plone/mockup/controlpanels/contentrule-elements";
-import "@plone/mockup/controlpanels/discussion";
-import "@plone/mockup/controlpanels/discussion-comments";
-import "@plone/mockup/controlpanels/discussion-moderation";
+import "@plone/mockup/src/pat/controlpanels/dexterity-types-listing";
+import "@plone/mockup/src/pat/controlpanels/registry";
+import "@plone/mockup/src/pat/controlpanels/schemaeditor";
+import "@plone/mockup/src/pat/controlpanels/contentrules";
+import "@plone/mockup/src/pat/controlpanels/contentrule-elements";
+import "@plone/mockup/src/pat/controlpanels/discussion";
+import "@plone/mockup/src/pat/controlpanels/discussion-comments";
+import "@plone/mockup/src/pat/controlpanels/discussion-moderation";
 
 // Change default value for pat-tooltip trigger
 tooltip_parser.parameters.trigger.value = "hover";
