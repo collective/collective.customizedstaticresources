@@ -76,4 +76,32 @@ ValidationPattern.prototype.error_template = (message) =>
 // Import pattern styles in JavaScript
 window.__patternslib_import_styles = true;
 
+// CUSTOMIZE SelectedItem.svelte component
+import plone_registry from "@plone/registry";
+
+// register custom `pat-contentbrowser` components
+async function register_selecteditem_component() {
+    // we register our component to a custom keyname.
+    // this keyname can now be used in plone.autoform widget hints:
+    //
+    // form.widget(
+    //      "my_contentbrowser_field",
+    //      ContentBrowserFieldWidget,
+    //      vocabulary="plone.app.vocabularies.Catalog",
+    //      pattern_options={
+    //          "recentlyUsed": True,  # Just turn on. Config in plone.app.widgets.
+    //          "componentRegistryKeys": {
+    //              "selectedItem": "pat-contentbrowser.customizedstaticresources.SelectedItem",  # use your customized component key here
+    //          },
+    //      },
+    //  )
+
+    const CustomSelectedItem = (await import("./js/pat/contentbrowser/components/CustomSelectedItem.svelte")).default;
+    plone_registry.registerComponent({
+        name: "pat-contentbrowser.customizedstaticresources.SelectedItem",
+        component: CustomSelectedItem,
+    });
+}
+register_selecteditem_component();
+
 registry.init();
