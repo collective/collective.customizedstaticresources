@@ -12,7 +12,7 @@ It provides a basic ``webpack`` configuration and includes ``@plone/mockup``.
 
 The bundle is build the same as in [plone/mockup](https://github.com/plone/mockup).
 
-The ``Makefile`` is a copy of https://github.com/plone/plone.staticresources/blob/master/Makefile but without the icon genereation.
+The ``Makefile`` is a copy of https://github.com/plone/plone.staticresources/blob/master/Makefile but without the icon generation.
 
 If you want to use your custom icon-set please have a look there how to implement it.
 

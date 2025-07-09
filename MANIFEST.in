@@ -1,7 +1,18 @@
 graft src/collective
 graft docs
 include *.rst
-exclude tox.ini
-exclude *.txt
-exclude .gitlab-ci.yml
 global-exclude *.pyc
+include pyproject.toml
+recursive-exclude news *
+recursive-exclude resources *
+exclude news
+exclude .coveragerc
+# exclude npmjs resources
+exclude package.json
+exclude .prettierrc.json
+exclude Makefile
+exclude babel.config.js
+exclude bobtemplate.cfg
+exclude requirements.txt
+exclude webpack.config.js
+exclude yarn.lock
