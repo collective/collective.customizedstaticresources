@@ -59,7 +59,7 @@ jobs:
                 PLONE-VERSION: ${{ matrix.plone-version }}
                 PYTHON-VERSION: ${{ matrix.python-version }}
             - name: "Upload coverage to Codecov"
-              uses: "codecov/codecov-action@v3"
+              uses: "codecov/codecov-action@v5"
               with:
                 fail_ci_if_error: true
               if: matrix.python-version == '3.7'
