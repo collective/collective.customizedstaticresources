@@ -10,3 +10,10 @@ codespell_skip = "*.js,*.js.map,*.svg,yarn.lock,*.json,*/icons_country_flags.xml
 
 [tox]
 test_matrix = {"6.2" = ["3.13"], "6.1" = ["3.10"]}
+
+[github]
+jobs = [
+   "qa",
+   "coverage",
+   "release_ready",
+]
