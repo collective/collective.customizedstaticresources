@@ -27,6 +27,9 @@ As an example we customize the ``pat-tinymce`` pattern here:
 3. Compile the bundle with ``make build``.
 4. (re)install this package in the addons controlpanel.
 
+A second example shows how to customize the ``SelectedItem.svelte`` component.
+
+See ``resources/js/pat/contentbrowser/components``.
 
 Installation
 ------------
