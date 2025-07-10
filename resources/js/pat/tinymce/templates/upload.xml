@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <div>
   <div class="linkModal22">
-    <h1 /></div></div>
+    <h1><%- uploadHeading %></h1>
+    <input type="text" name="upload22" style="display:none" />
+    <div class="uploadify-me22"></div>
+  </div>
+</div>
