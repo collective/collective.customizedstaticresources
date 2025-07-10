@@ -15,7 +15,7 @@ module.exports = () => {
         "src/collective/customizedstaticresources/static/bundle/"
     );
 
-    console.log(config);
+    // console.log(config);
 
     return config;
 };
