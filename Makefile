@@ -15,3 +15,11 @@ install: clean
 .PHONY: build
 build: install
 	$(YARN) run build
+
+.PHONY: watch
+watch: install
+	$(YARN) run watch
+
+.PHONY: start
+start: install
+	$(YARN) run start
