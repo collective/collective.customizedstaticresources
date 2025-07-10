@@ -42,8 +42,8 @@ import "@plone/mockup/src/pat/select2/select2";
 import "@plone/mockup/src/pat/sortable/sortable";
 import "@plone/mockup/src/pat/structure/structure";
 import "@plone/mockup/src/pat/structure-updater/structure-updater";
-import "@plone/mockup/src/pat/textareamimetypeselector/textareamimetypeselector";
 // COMMENT/REMOVE CUSTOMIZED PATTERNS
+// import "@plone/mockup/src/pat/textareamimetypeselector/textareamimetypeselector";
 // import "@plone/mockup/src/pat/tinymce/tinymce";
 import "@plone/mockup/src/pat/toggle/toggle";
 import "@plone/mockup/src/pat/toolbar/toolbar";
@@ -51,6 +51,9 @@ import "@plone/mockup/src/pat/tree/tree";
 import "@plone/mockup/src/pat/upload/upload";
 
 // CUSTOMIZED LOCAL PATTERNS
+// since pat-textareamimetypeselector selector imports pat-tinymce we have to
+// customize this too, in order to get our customized tiny delievered.
+import "./js/pat/textareamimetypeselector/textareamimetypeselector";
 import "./js/pat/tinymce/tinymce";
 
 // REMOVE obsolete patterns
