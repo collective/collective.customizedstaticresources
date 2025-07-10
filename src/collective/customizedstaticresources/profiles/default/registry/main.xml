@@ -16,8 +16,8 @@
   <records interface="plone.base.interfaces.IBundleRegistry"
            prefix="plone.bundles/plone-customized-bundle"
   >
-    <value key="enabled">False</value>
-    <value key="jscompilation">++plone++static/bundle/bundle.min.js</value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++customstatic/bundle/bundle.min.js</value>
     <value key="csscompilation" />
     <value key="load_async">False</value>
     <value key="load_defer">False</value>

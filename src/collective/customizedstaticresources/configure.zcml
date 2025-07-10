@@ -33,7 +33,7 @@
 
   <plone:static
       directory="static"
-      name="static"
+      name="customstatic"
       type="plone"
       />
 
