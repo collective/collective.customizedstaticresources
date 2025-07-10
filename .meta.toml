@@ -17,3 +17,8 @@ jobs = [
    "coverage",
    "release_ready",
 ]
+
+[pre_commit]
+zpretty_extra_lines = """
+        args: ['--extend-exclude', 'resources/js/pat/tinymce/templates/*.xml']
+"""
